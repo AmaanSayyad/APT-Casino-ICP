@@ -3,7 +3,7 @@ import { DynamicContextProvider } from "@dynamic-labs/sdk-react-core";
 import { EthereumWalletConnectors } from "@dynamic-labs/ethereum";
 import { DynamicWagmiConnector } from "@dynamic-labs/wagmi-connector";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { mainnet } from "viem/chains";
+import { mainnet, mantleSepoliaTestnet } from "viem/chains";
 import { createConfig, WagmiProvider, http } from "wagmi";
 
 const mantleSepoliaChain = {
@@ -56,11 +56,11 @@ const evmNetworks = [
 
 const queryClient = new QueryClient();
 const config = createConfig({
-  chains: [mainnet, mantleSepoliaChain],
+  chains: [mainnet, mantleSepoliaTestnet],
   multiInjectedProviderDiscovery: false,
   transports: {
     [mainnet.id]: http(),
-    [mantleSepoliaChain.id]: http(),
+    [mantleSepoliaTestnet.id]: http(),
   },
 });
 
