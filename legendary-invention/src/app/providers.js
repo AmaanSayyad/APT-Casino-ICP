@@ -6,17 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { mainnet, mantleSepoliaTestnet } from "viem/chains";
 import { createConfig, WagmiProvider, http } from "wagmi";
 
-const mantleSepoliaChain = {
-  id: 5003,
-  name: "Mantle Sepolia Testnet",
-  nativeCurrency: { name: "Mantle Sepolia Testnet", symbol: "MNT", decimals: 18 },
-  rpcUrls: {
-    default: { http: ["https://rpc.sepolia.mantle.xyz"] },
-  },
-  blockExplorers: {
-    default: { name: "Mantle Sepolia Testnet", url: "https://sepolia.mantlescan.xyz" },
-  },
-};
+
 
 const evmNetworks = [
   {

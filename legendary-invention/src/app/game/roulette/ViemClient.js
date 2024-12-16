@@ -2,17 +2,6 @@ import { createPublicClient, http, createWalletClient, custom } from 'viem'
 import { polygon, mainnet, mantleSepoliaTestnet } from 'viem/chains'
 import dynamic from 'next/dynamic';
 
-const mantleSepoliaChain = {
-    id: 5003,
-    name: "Mantle Sepolia Testnet",
-    nativeCurrency: { name: "Mantle Sepolia Testnet", symbol: "MNT", decimals: 18 },
-    rpcUrls: {
-        default: { http: ["https://rpc.sepolia.mantle.xyz"] },
-    },
-    blockExplorers: {
-        default: { name: "Mantle Sepolia Testnet", url: "https://sepolia.mantlescan.xyz" },
-    },
-};
 
 export const publicMainnetClient = createPublicClient({
     chain: mainnet,
@@ -30,11 +19,11 @@ export const walletPolygonClient = dynamic(() => createWalletClient({
 }))
 
 export const publicMantleSepoliaClient = createPublicClient({
-    chain: mantleSepoliaChain,
+    chain: mantleSepoliaTestnet,
     transport: http()
 });
 
 export const walletMantleSepoliaClient = dynamic(() => createWalletClient({
-    chain: mantleSepoliaChain,
+    chain: mantleSepoliaTestnet,
     transport: custom(window.ethereum)
 }))
