@@ -83,7 +83,7 @@ The global online gambling market is projected to reach **$150 billion by 2030**
 - **Innovation**: Combining AI, DeFi, and GameFi into a unified platform.
 - **Cross-Chain Compatibility**: Seamless transactions across multiple blockchains.
 
-# How to Set Up and Run APT-Casino on Your Local Machine
+## How to Set Up and Run APT-Casino on Your Local Machine
 
 Follow these steps to clone, set up, and run the APT-Casino application locally.
 
