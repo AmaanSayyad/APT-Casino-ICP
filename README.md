@@ -83,6 +83,44 @@ The global online gambling market is projected to reach **$150 billion by 2030**
 - **Innovation**: Combining AI, DeFi, and GameFi into a unified platform.
 - **Cross-Chain Compatibility**: Seamless transactions across multiple blockchains.
 
+# How to Set Up and Run APT-Casino on Your Local Machine
+
+Follow these steps to clone, set up, and run the APT-Casino application locally.
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/AmaanSayyad/APT-Casino-Mantle
+```
+
+## 2. Navigate to the Project Directory
+
+```bash
+cd legendary-invention
+```
+
+## 3. Install Dependencies
+
+Open your terminal and run the following command to install all required dependencies:
+```bash
+npm install --f
+```
+
+## 4. Start the Development Server
+
+To start the application in development mode, run:
+```bash
+npm run dev
+```
+
+## 5. Access the Application
+
+Once the server starts, open your browser and go to:
+http://localhost:3000
+You're all set to explore APT-Casino! 🎲🎮
+
+Note: Ensure you have Node.js and npm installed on your system.
+
 ## 📈 Progress
 
 - Fully functional **European roulette** deployed on Mantle.
