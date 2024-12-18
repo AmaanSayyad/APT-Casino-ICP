@@ -1,4 +1,4 @@
-export const rouletteContractAddress = '0x0AC4bB9b722ec9EB4E4234d8DD07f8D67A4fa071';
+export const rouletteContractAddress = '0x32Ae204Fb204888e9Fa79CC2afD11cF398C8Eb2E';
 export const rouletteABI = [
 	{
 		"inputs": [
@@ -78,29 +78,6 @@ export const rouletteABI = [
 		"type": "event"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "enum Roulette.BetType",
-				"name": "betType",
-				"type": "uint8"
-			},
-			{
-				"internalType": "uint8",
-				"name": "betValue",
-				"type": "uint8"
-			},
-			{
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			}
-		],
-		"name": "placeBet",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"anonymous": false,
 		"inputs": [
 			{
@@ -112,19 +89,6 @@ export const rouletteABI = [
 		],
 		"name": "RandomNumberGenerated",
 		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			}
-		],
-		"name": "withdrawTokens",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
 	},
 	{
 		"inputs": [
@@ -202,6 +166,29 @@ export const rouletteABI = [
 	{
 		"inputs": [
 			{
+				"internalType": "enum Roulette.BetType",
+				"name": "betType",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "betValue",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "placeBet",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "address",
 				"name": "",
 				"type": "address"
@@ -242,6 +229,19 @@ export const rouletteABI = [
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "withdrawTokens",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	}
 ];
