@@ -109,7 +109,7 @@ export default function Page() {
                 <tr className="">
                   <td className="flex py-4 gap-3 pl-10">
                    
-                    MNT (Mantle testnet)
+                    $MNT (Mantle testnet)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>
@@ -122,7 +122,7 @@ export default function Page() {
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
                     
-                    MNT (Mantle testnet)
+                    $MNT (Mantle testnet)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>
@@ -135,7 +135,7 @@ export default function Page() {
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
                     
-                    MNT (Mantle testnet)
+                    $MNT (Mantle testnet)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>

@@ -6,8 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { mainnet, mantleSepoliaTestnet } from "viem/chains";
 import { createConfig, WagmiProvider, http } from "wagmi";
 
-
-
 const evmNetworks = [
   {
     blockExplorerUrls: ['https://sepolia.mantlescan.xyz'],
