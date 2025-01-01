@@ -33,7 +33,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MuiAlert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
-import RouletteDescription from "../../../components/RouletteDescription";
+import GameDetail from "../../../components/GameDetail";
 
 const TooltipWide = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -1177,7 +1177,7 @@ export default function GameRoulette() {
               )}
             </Box>
           </Box>
-          <RouletteDescription />
+          <GameDetail />
         </Box>
 
         <Footer />
