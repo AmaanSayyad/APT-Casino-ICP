@@ -15,7 +15,6 @@ import DynamicForm from "./Form";
 import GameDetail from "../../../components/GameDetail";
 import { gameData, bettingTableData } from "./config/gameDetail";
 import { manualFormConfig, autoFormConfig } from "./config/formConfig";
-import Game from "./game";
 
 const options = [
   { value: "iphone", label: "iPhone", icon: <Apple className="w-4 h-4" /> },
@@ -24,7 +23,7 @@ const options = [
   { value: "watch", label: "Apple Watch", icon: <Watch className="w-4 h-4" /> },
 ];
 
-export default function Mines() {
+export default function Plinko() {
   const handleFormSubmit = (data) => {
     console.log("Form Data Submitted:", data);
   };
@@ -52,8 +51,8 @@ export default function Mines() {
         {/* Game Header */}
         <div className="text-white flex justify-between items-center py-4 flex-wrap gap-4 px-4 md:px-8 lg:px-20">
           <div>
-            <p className="text-sm text-gray-400">Games/Mines</p>
-            <h1 className="text-3xl md:text-4xl font-semibold">Mines</h1>
+            <p className="text-sm text-gray-400">Games/Plinko</p>
+            <h1 className="text-3xl md:text-4xl font-semibold">Plinko</h1>
           </div>
           <DropdownButton
             options={options}
@@ -71,7 +70,7 @@ export default function Mines() {
 
           {/* Game Area */}
           <div className="w-full md:w-2/3 lg:w-3/4 rounded-3xl border-2 border-[#333947] bg-[#290023] p-6">
-            <Game />
+            <h2 className="text-xl font-semibold text-white">Game Area</h2>
           </div>
         </div>
 
