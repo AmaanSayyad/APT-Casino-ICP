@@ -15,7 +15,7 @@ export default function HeroSection() {
       </span>
     </h1>
     <h2 className="text-[#B3B3B3] mt-4 text-xl leading-relaxed max-w-2xl">
-      Dive into the next generation of gaming with APT-Casino – where every move is powered by <span className="text-white font-semibold">Mantle Blockchain</span>. Discover new games, connect
+      Dive into the next generation of gaming with APT-Casino – where every move is powered by <span className="text-white font-semibold">ICP Blockchain</span>. Discover new games, connect
       with friends, and unlock endless possibilities.
     </h2>
     <div className="flex gap-6 mt-8">

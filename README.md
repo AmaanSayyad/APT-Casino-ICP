@@ -1,10 +1,10 @@
 # APT-Casino 🎲🎰
 
-One of our team-mate was on etherscan exploring some transactions and saw an advertisement of https://stake.com/ which was giving a 200% bonus on the first deposit, when, our team-mate deposited the 120 USDT into this platform they gave him 360 USDT as total balance and when our teammate started playing game he was shocked to see that he was only able to play with $1 per game of Play Plinko Online - Pachinko Casino Game on Stake.com and was unable to increase the betting amount beyond $1 coz he was using the bonus scheme of 200% and when he tried to explore and play other games on the platform he got to know that this platform has cheated him under the name of wager limits.
+Amaan Sayyad the founder of APT-Casino was on etherscan exploring some transactions and saw an advertisement of https://stake.com/ which was giving a 200% bonus on the first deposit somehow he got attracted to it and deposited 120 USDT into Stake platform, Stake gave him 360 USDT as the total balance and when he started playing game he was shocked to see that he was only able to place bet of default $1 per game of Plinko Casino Game on Stake.com and was unable to increase the betting amount beyond $1 because he was using the bonus scheme of 200% and when he tried to explore and play other games on the platform he got to know that this platform has cheated him under the name of wager limits.
 
-When he tried to withdraw money they showed him this rule list of wager limit which said that if he wants to withdraw the deposited amount then he have to play $12,300 worth of game play and this was the big shock for him where he was explained a maths logic by their live support. Thereby, In the hope of getting the deposited money back he played the game Plinko entire night and lost all money.
+When he tried to withdraw money they showed him this rule list of wager limits which said that if he wanted to withdraw the deposited amount then he had to play $12,300 worth of games this was a big shock for him when he was explained a maths logic by their live support. Thereby, In the hope of getting the deposited money back, he played the game Plinko the entire night and lost all his money.
 
-He was very annoyed of this and that's how APT-Casino born, which is a combination of gamefi, ai and defi all in one platform where new web3 users can play games, perform gambling but have a safe, secure, transparent platform that does not scam any of their users. Also, we wanted to address common issues in traditional gaming platforms.
+He was very annoyed by this and started researching on gambling platforms where he found more than 10+ major difficulties and that's how APT-Casino was born, which is a combination of Gamefi and Defi all in one platform where new web2 and web3 gamers/ gamblers can play games, and perform gambling but have a safe, secure, transparent platform that does not scam any of their users. Also, we wanted to address common issues in traditional gaming and gambling platforms.
 
 ## 🚨 Problem
 
@@ -18,8 +18,8 @@ The traditional online gambling industry faces numerous challenges:
 ## ✅ Solution
 
 APT-Casino addresses these problems with a fair, transparent, and decentralized ecosystem:
-- **Provably Fair Gaming**: Leveraging VRF (Verifiable Random Function) for unbiased outcomes.
-- **Low Fees**: Built on Mantle Blockchain, minimizing transaction costs.
+- **Provably Fair Gaming**: Leveraging ICP motoko random module, raw_rand calls random tape pseudorandom number generator (PRNG) to ensure transparency and fairness in all games.
+- **Low Fees**: Built on ICP Blockchain, minimizing transaction costs.
 - **Flexible Withdrawal Policies**: No restrictive withdrawal conditions.
 - **Transparent Bonus Schemes**: Honest terms for bonuses, ensuring trust.
 - **True Asset Ownership**: Users retain full control of their assets through decentralized mechanisms.
@@ -34,30 +34,24 @@ APT-Casino addresses these problems with a fair, transparent, and decentralized 
 ### 2. **GameFi - Gaming Aspect**
 - Fully on-chain **European roulette**:
   - Place bets such as straight, split, street, corner, red, black, high, low, and more.
-  - Outcomes powered by **VRF** for transparent randomness.
+  - Outcomes powered by **RPNG** for transparent randomness.
   - Automatic calculation and transfer of winnings to wallets.
 - Future game additions: Plinko, blackjack, and other popular casino games.
 
 ### 3. **DeFi - Lending Aspect**
-- Borrow **APT-Casino Tokens (APTC)** by using $MNT tokens as collateral.
 - Seamless gameplay without liquidating existing holdings.
 - Real-time asset pricing powered by decentralized oracles.
 
 ## 🛠 Tech Stack
 
-- **Blockchain**: Mantle Sepolia Testnet
-- **Smart Contracts**: Solidity
+- **Blockchain**: ICP
+- **Smart Contracts**: Motoko
 - **AI**: DALL-E3, GPT-powered quiz generation
 - **Frontend**: React, Tailwind CSS
 - **Backend**: Node.js
-- **VRF**: Chainlink for verifiable randomness
+- **VRF**: ICP motoko random module
 - **DeFi Features**: Lending, borrowing, and collateral management
 - **SocialFi**: Leaderboards, profile NFTs, and activity tracking
-
-## 🌐 Deployed Contracts
-Cannister Deployment Done : https://jcvwc-6iaaa-aaaag-at65q-cai.icp0.io/
-- **Token.sol (APTC)**: https://sepolia.mantlescan.xyz/address/0x139f06D9F9374d714f786f65dB8791B6339a50A2
-- **Roulette.sol**: https://sepolia.mantlescan.xyz/address/0x32Ae204Fb204888e9Fa79CC2afD11cF398C8Eb2E#code
 
 ## 🌍 Market Opportunity
 
@@ -66,8 +60,11 @@ The global online gambling market is projected to reach **$150 billion by 2030**
 ## 💰 Revenue Model and Future Roadmap
 
 ### Revenue Streams:
-- **Platform Fees**: A small percentage of transactions.
+- **Platform Fees**: 0.1% fees on transactions.
 - **In-Game Purchases**: Skins, NFTs, and premium features.
+- **3rd Party Games:** 3rd Party Games SDK integration.
+- **Advertising:** Partnered promotions, priority visibility and in-game advertising opportunities.
+- **Premium Features:** Offering users access to exclusive games or features through paid upgrades or subscriptions.
 - **DeFi Services**: Staking, farming, and yield generation.
 
 ### Future Roadmap:
@@ -90,7 +87,7 @@ Follow these steps to clone, set up, and run the APT-Casino application locally.
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/AmaanSayyad/APT-Casino-Mantle
+git clone 
 ```
 
 ## 2. Navigate to the Project Directory
@@ -123,7 +120,7 @@ Note: Ensure you have Node.js and npm installed on your system.
 
 ## 📈 Progress
 
-- Fully functional **European roulette** deployed on Mantle.
+- Fully functional **European roulette** deployed on ICP.
 - On-chain **NFT profile creation** and leaderboard integration.
 - DeFi lending and borrowing mechanisms live.
 - Smart contracts verified and deployed.
