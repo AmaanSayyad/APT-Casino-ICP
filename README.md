@@ -55,7 +55,7 @@ APT-Casino addresses these problems with a fair, transparent, and decentralized 
 - **SocialFi**: Leaderboards, profile NFTs, and activity tracking
 
 ## 🌐 Deployed Contracts
-
+Cannister Deployment Done : https://jcvwc-6iaaa-aaaag-at65q-cai.icp0.io/
 - **Token.sol (APTC)**: https://sepolia.mantlescan.xyz/address/0x139f06D9F9374d714f786f65dB8791B6339a50A2
 - **Roulette.sol**: https://sepolia.mantlescan.xyz/address/0x32Ae204Fb204888e9Fa79CC2afD11cF398C8Eb2E#code
 
