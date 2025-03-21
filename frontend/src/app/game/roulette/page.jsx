@@ -13,16 +13,12 @@ import { gameData, bettingTableData } from "../mines/config/gameDetail";
 import TextFieldCurrency from "../../../components/TextFieldCurrency";
 import Button from "../../../components/Button";
 import { rouletteTutorial, rouletteOdds } from "./tutorials";
+import { rouletteABI, rouletteContractAddress } from "./contractDetails";
 import {
-  rouletteABI,
-  rouletteContractAddress,
-} from "./contractDetails";
-import {
-
   publicMantleSepoliaClient,
   walletMantleSepoliaClient,
 } from "./ViemClient";
-import {  parseEther } from "viem";
+import { parseEther } from "viem";
 
 import { muiStyles } from "./styles";
 
@@ -31,6 +27,7 @@ import Footer from "../../../components/Footer";
 import MuiAlert from "@mui/material/Alert";
 
 import GameDetail from "../../../components/GameDetail";
+import toast from "react-hot-toast";
 
 const TooltipWide = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -450,21 +447,21 @@ export default function GameRoulette() {
     setBet(parseFloat(e.target.value));
   };
 
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   // Function to handle "Place Bet" sequence
-  const handlePlaceBet = () => {
-    setNotificationIndex(0); // Start from the first notification
-    setShowNotification(true);
+  const handlePlaceBet = async () => {
+    let id = toast.loading(`Placing your bet of amount ${bet}...`);
+    await delay(3000);
 
-    const interval = setInterval(() => {
-      setNotificationIndex((prevIndex) => {
-        if (prevIndex < notificationMessages.length - 1) {
-          return prevIndex + 1;
-        } else {
-          clearInterval(interval); // Clear interval once all notifications are shown
-          return prevIndex;
-        }
-      });
-    }, 2000); // 2 seconds interval
+    toast.success("Bet placed successfully!", { id });
+    await delay(3000);
+
+    let id2 = toast.loading(`Calculating Outcome...`);
+    await delay(3000);
+    const rouletteOutcome = Math.floor(Math.random() * 37); // Simulating a roulette outcome (0-36)
+    toast.success(`You lost the bet! The outcome is ${rouletteOutcome}.`, {
+      id2,
+    });
   };
 
   // Function to close the notification
@@ -1132,7 +1129,7 @@ export default function GameRoulette() {
                 </Box>
               ) : (
                 <Box sx={{ display: "flex", flexDirection: "column" }}>
-                  <Button onClick={() => switchNetwork()}>Place Bet</Button>
+                  <Button onClick={handlePlaceBet}>Place Bet</Button>
                 </Box>
               )}
             </Box>
