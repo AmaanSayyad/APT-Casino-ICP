@@ -19,7 +19,6 @@ The traditional online gambling industry faces numerous challenges:
 ## ✅ Solution
 
 APT-Casino addresses these problems with a fair, transparent, and decentralized ecosystem:
-
 - **Provably Fair Gaming**: Leveraging ICP motoko random module, raw_rand calls random tape pseudorandom number generator (PRNG) to ensure transparency and fairness in all games.
 - **Low Fees**: Built on ICP Blockchain, minimizing transaction costs.
 - **Flexible Withdrawal Policies**: No restrictive withdrawal conditions.
