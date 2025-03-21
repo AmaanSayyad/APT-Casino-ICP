@@ -18,15 +18,14 @@ const backend = createActor(canisterId);
 export default function Navbar() {
   const [principal, setPrincipal] = useState(undefined);
   const [needLogin, setNeedLogin] = useState(true);
+  const router = useRouter();
 
   const authClientPromise = AuthClient.create();
 
   const signIn = async () => {
     const authClient = await authClientPromise;
 
-    const internetIdentityUrl = import.meta.env.PROD
-      ? undefined
-      : `http://${process.env.CANISTER_ID_INTERNET_IDENTITY}.localhost:4943`;
+    const internetIdentityUrl = `http://${process.env.CANISTER_ID_INTERNET_IDENTITY}.localhost:4943`;
 
     await new Promise((resolve) => {
       authClient.login({
@@ -34,6 +33,10 @@ export default function Navbar() {
         onSuccess: () => resolve(undefined),
       });
     });
+
+    console.log(
+      `http://${process.env.CANISTER_ID_INTERNET_IDENTITY}.localhost:4943`
+    );
 
     const identity = authClient.getIdentity();
     updateIdentity(identity);
@@ -70,7 +73,6 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
-  const router = useRouter();
   const navLinks = [
     {
       name: "Home",
@@ -119,45 +121,47 @@ export default function Navbar() {
         </div>
         <div className="buttons flex gap-3">
           {true ? (
-            <div className="relative group">
-              <GradientBorderButton classes="text-white">
-                wallet
-              </GradientBorderButton>
-              <div className="bg-dark-pink hidden absolute w-[120%] right-0  cursor-pointer group-hover:flex flex-col gap-6 text-lg text-white">
-                <span
-                  onClick={handleProfileClick}
-                  className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
-                >
-                  <AccountCircleIcon />
-                  <span>Profile</span>
-                </span>
-                <span
-                  onClick={() => router.push("/game")}
-                  className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
-                >
-                  <SportsEsportsIcon />
-                  <span>Games</span>
-                </span>
-                <span className="flex p-2 items-center gap-3 hover:bg-dark-kiss ">
-                  {needLogin ? (
-                    <div className="menu-item-button" onClick={signIn}>
-                      Sign in
-                    </div>
-                  ) : (
-                    <div className="menu-item-button" onClick={signOut}>
-                      Sign Out
-                    </div>
-                  )}
-                  {/* <LogoutIcon />
+            <>
+              <div className="relative group">
+                <GradientBorderButton classes="text-white">
+                  wallet
+                </GradientBorderButton>
+                <div className="bg-dark-pink hidden absolute w-[120%] right-0  cursor-pointer group-hover:flex flex-col gap-6 text-lg text-white">
+                  <span
+                    onClick={handleProfileClick}
+                    className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
+                  >
+                    <AccountCircleIcon />
+                    <span>Profile</span>
+                  </span>
+                  <span
+                    onClick={() => router.push("/game")}
+                    className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
+                  >
+                    <SportsEsportsIcon />
+                    <span>Games</span>
+                  </span>
+                  <span className="flex p-2 items-center gap-3 hover:bg-dark-kiss ">
+                    {needLogin ? (
+                      <button className="menu-item-button" onClick={signIn}>
+                        Sign in
+                      </button>
+                    ) : (
+                      <button className="menu-item-button" onClick={signOut}>
+                        Sign Out
+                      </button>
+                    )}
+                    {/* <LogoutIcon />
                   <span>Disconnect Wallet</span> */}
-                </span>
+                  </span>
+                </div>
               </div>
               {!needLogin && (
-                <div className="principal">
+                <span className="text-white">
                   Logged in as: {principal?.toString()}
-                </div>
+                </span>
               )}
-            </div>
+            </>
           ) : (
             <LaunchGameButton />
           )}
