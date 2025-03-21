@@ -1,4 +1,4 @@
-# APT Casino Mantle Frontend
+# APT Casino Frontend
 
 ## Getting Started
 

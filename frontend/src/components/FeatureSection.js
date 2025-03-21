@@ -60,7 +60,7 @@ export default function FeatureSection() {
             Traditional online casinos often lack transparency, leaving players
             to trust platforms without proof of fairness. Common issues include
             rigged games, hidden terms, and restrictive policies. APT-Casino
-            leverages Mantle Blockchain to provide a transparent, provably fair
+            leverages ICP Blockchain to provide a transparent, provably fair
             gaming experience. Key features include:
           </p>
           <ul className="list-disc pl-6 text-white/[0.6] mt-4 font-medium">
@@ -78,7 +78,7 @@ export default function FeatureSection() {
             </h2>
             <p className="text-white">
             APT-Casino ensures transparency with fully on-chain randomness
-              using our VRF module, guaranteeing verifiably fair outcomes for
+              using ICP onchain randomness module, guaranteeing verifiably fair outcomes for
               every game.
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function FeatureSection() {
           <div className="border border-[#E504983D] p-5 flex flex-col gap-3 inner-purple-shadow rounded-xl">
             <h2 className="text-dark-kiss text-sm font-semibold">Cross-Chain Liquidity:</h2>
             <p className="text-white">
-            Users can stake Mantle tokens in liquidity pools to earn APTC tokens, which are used for betting, gaming, and rewards. (Mantle Tokens are equivalent to in-game currency token APTC)
+            Users can stake ICP tokens in liquidity pools to earn APTC tokens, which are used for betting, gaming, and rewards. (ICP Tokens are equivalent to in-game currency token APTC)
 
             </p>
             <ul className="list-disc pl-6 text-white mt-2">

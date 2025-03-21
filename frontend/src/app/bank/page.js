@@ -22,7 +22,7 @@ export default function Page() {
           </div>
           <div className="flex items-center px-3 flex-col">
             <h5 className="text-sm">APTC</h5>
-            <span className="text-xl text-sharp-purple">APY 6.03%</span>
+            <span className="text-xl text-sharp-purple">APY 8.03%</span>
           </div>
           <div className=" w-1/12 flex items-end justify-center">
             <GradientBorderButton classes="w-full h-2/3">
@@ -50,7 +50,7 @@ export default function Page() {
                         className="bg-dark-purple w-[250px] focus:outline-none p-1 rounded-md"
                       />
                     </div>
-                    <p className="text-sm">Max borrowable: 0.12334345353535</p>
+                    <p className="text-sm">Max borrowable: 0.00</p>
                   </div>
                 </div>
                 <div className="flex flex-col justify-end gap-4">
@@ -68,7 +68,7 @@ export default function Page() {
                   <span className="flex items-center mb-5 gap-1">
                     <p className="font-medium text-3xl">0</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
-                      (Mantle Sepolia)
+                      (Internet Computer Protocol)
                     </p>
                   </span>
                   <div>
@@ -78,7 +78,7 @@ export default function Page() {
                         className="bg-dark-purple w-[250px] focus:outline-none p-1 rounded-md"
                       />
                     </div>
-                    <p className="text-sm">Max borrowable: 0.12334345353535</p>
+                    <p className="text-sm">Max borrowable: 0.00</p>
                   </div>
                 </div>
                 <div className="flex flex-col justify-end gap-4">
@@ -105,11 +105,11 @@ export default function Page() {
                 <tr className="col-span-full h-0.5 w-full"></tr>
                 <tr className="">
                   <td className="flex py-4 gap-3 pl-10">
-                    $MNT (Mantle testnet)
+                    $ICP (Internet Computer Protocol)
                   </td>
-                  <td className="px-5">$0.93</td>
-                  <td>0.22</td>
-                  <td className="px-5">0.94%</td>
+                  <td className="px-5">$5.93</td>
+                  <td>0.0</td>
+                  <td className="px-5">7.94%</td>
                   <td className="flex items-center  justify-center gap-5">
                     <GradientBorderButton>Withdraw</GradientBorderButton>
                     <GradientBgButton>Deposit</GradientBgButton>
@@ -117,11 +117,11 @@ export default function Page() {
                 </tr>
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
-                    $MNT (Mantle testnet)
+                  $ICP (Internet Computer Protocol)
                   </td>
-                  <td className="px-5">$0.93</td>
-                  <td>0.22</td>
-                  <td className="px-5">0.94%</td>
+                  <td className="px-5">$5.93</td>
+                  <td>0.0</td>
+                  <td className="px-5">7.94%</td>
                   <td className="flex items-center justify-center gap-5">
                     <GradientBorderButton>Withdraw</GradientBorderButton>
                     <GradientBgButton>Deposit</GradientBgButton>
@@ -129,11 +129,11 @@ export default function Page() {
                 </tr>
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
-                    $MNT (Mantle testnet)
+                  $ICP (Internet Computer Protocol)
                   </td>
-                  <td className="px-5">$0.93</td>
-                  <td>0.22</td>
-                  <td className="px-5">0.94%</td>
+                  <td className="px-5">$5.93</td>
+                  <td>0.0</td>
+                  <td className="px-5">7.94%</td>
                   <td className="flex items-center py-4 justify-center gap-5">
                     <GradientBorderButton>Withdraw</GradientBorderButton>
                     <GradientBgButton>Deposit</GradientBgButton>
