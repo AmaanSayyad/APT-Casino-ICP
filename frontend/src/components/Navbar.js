@@ -18,15 +18,14 @@ const backend = createActor(canisterId);
 export default function Navbar() {
   const [principal, setPrincipal] = useState(undefined);
   const [needLogin, setNeedLogin] = useState(true);
+  const router = useRouter();
 
   const authClientPromise = AuthClient.create();
 
   const signIn = async () => {
     const authClient = await authClientPromise;
 
-    const internetIdentityUrl = import.meta.env.PROD
-      ? undefined
-      : `http://${process.env.CANISTER_ID_INTERNET_IDENTITY}.localhost:4943`;
+    const internetIdentityUrl = `http://${process.env.CANISTER_ID_INTERNET_IDENTITY}.localhost:4943`;
 
     await new Promise((resolve) => {
       authClient.login({
@@ -34,6 +33,10 @@ export default function Navbar() {
         onSuccess: () => resolve(undefined),
       });
     });
+
+    console.log(
+      `http://${process.env.CANISTER_ID_INTERNET_IDENTITY}.localhost:4943`
+    );
 
     const identity = authClient.getIdentity();
     updateIdentity(identity);
@@ -70,7 +73,6 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
-  const router = useRouter();
   const navLinks = [
     {
       name: "Home",
@@ -140,13 +142,13 @@ export default function Navbar() {
                 </span>
                 <span className="flex p-2 items-center gap-3 hover:bg-dark-kiss ">
                   {needLogin ? (
-                    <div className="menu-item-button" onClick={signIn}>
+                    <button className="menu-item-button" onClick={signIn}>
                       Sign in
-                    </div>
+                    </button>
                   ) : (
-                    <div className="menu-item-button" onClick={signOut}>
+                    <button className="menu-item-button" onClick={signOut}>
                       Sign Out
-                    </div>
+                    </button>
                   )}
                   {/* <LogoutIcon />
                   <span>Disconnect Wallet</span> */}

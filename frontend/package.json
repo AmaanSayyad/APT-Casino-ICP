@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@dfinity/agent": "^2.3.0",
+    "@dfinity/auth-client": "^2.3.0",
     "@dfinity/candid": "^2.3.0",
+    "@dfinity/identity": "^2.3.0",
     "@dfinity/principal": "^2.3.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -44,8 +46,6 @@
     "viem": "^2.13.3"
   },
   "devDependencies": {
-    "@dfinity/auth-client": "^2.3.0",
-    "@dfinity/identity": "^2.3.0",
     "@dfinity/internet-identity-playwright": "^0.0.4"
   }
 }
