@@ -121,45 +121,47 @@ export default function Navbar() {
         </div>
         <div className="buttons flex gap-3">
           {true ? (
-            <div className="relative group">
-              <GradientBorderButton classes="text-white">
-                wallet
-              </GradientBorderButton>
-              <div className="bg-dark-pink hidden absolute w-[120%] right-0  cursor-pointer group-hover:flex flex-col gap-6 text-lg text-white">
-                <span
-                  onClick={handleProfileClick}
-                  className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
-                >
-                  <AccountCircleIcon />
-                  <span>Profile</span>
-                </span>
-                <span
-                  onClick={() => router.push("/game")}
-                  className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
-                >
-                  <SportsEsportsIcon />
-                  <span>Games</span>
-                </span>
-                <span className="flex p-2 items-center gap-3 hover:bg-dark-kiss ">
-                  {needLogin ? (
-                    <button className="menu-item-button" onClick={signIn}>
-                      Sign in
-                    </button>
-                  ) : (
-                    <button className="menu-item-button" onClick={signOut}>
-                      Sign Out
-                    </button>
-                  )}
-                  {/* <LogoutIcon />
+            <>
+              <div className="relative group">
+                <GradientBorderButton classes="text-white">
+                  wallet
+                </GradientBorderButton>
+                <div className="bg-dark-pink hidden absolute w-[120%] right-0  cursor-pointer group-hover:flex flex-col gap-6 text-lg text-white">
+                  <span
+                    onClick={handleProfileClick}
+                    className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
+                  >
+                    <AccountCircleIcon />
+                    <span>Profile</span>
+                  </span>
+                  <span
+                    onClick={() => router.push("/game")}
+                    className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
+                  >
+                    <SportsEsportsIcon />
+                    <span>Games</span>
+                  </span>
+                  <span className="flex p-2 items-center gap-3 hover:bg-dark-kiss ">
+                    {needLogin ? (
+                      <button className="menu-item-button" onClick={signIn}>
+                        Sign in
+                      </button>
+                    ) : (
+                      <button className="menu-item-button" onClick={signOut}>
+                        Sign Out
+                      </button>
+                    )}
+                    {/* <LogoutIcon />
                   <span>Disconnect Wallet</span> */}
-                </span>
+                  </span>
+                </div>
               </div>
               {!needLogin && (
-                <div className="principal">
+                <span className="text-white">
                   Logged in as: {principal?.toString()}
-                </div>
+                </span>
               )}
-            </div>
+            </>
           ) : (
             <LaunchGameButton />
           )}
