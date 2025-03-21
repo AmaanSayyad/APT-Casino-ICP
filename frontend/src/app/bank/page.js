@@ -1,9 +1,9 @@
-import GradientBorderButton from "../../components/GradientBorderButton";
-import Navbar from "../../components/Navbar";
-import HeaderText from "../../components/HeaderText";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import GradientBgButton from "../../components/GradientBgButton";
+import GradientBorderButton from "../../components/GradientBorderButton";
+import HeaderText from "../../components/HeaderText";
+import Navbar from "../../components/Navbar";
 export default function Page() {
   return (
     <>
@@ -38,10 +38,9 @@ export default function Page() {
                 <div className="flex  flex-col gap-3">
                   <h5 className="text-xl font-sans">CURRENT</h5>
                   <span className="flex items-center mb-5 gap-1">
-
                     <p className="font-medium text-3xl">0</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
-                      (Polygon)
+                      (Internet Computer Protocol)
                     </p>
                   </span>
                   <div>
@@ -67,7 +66,6 @@ export default function Page() {
                 <div className="flex  flex-col gap-3">
                   <h5 className="text-xl font-sans">CURRENT</h5>
                   <span className="flex items-center mb-5 gap-1">
-                    
                     <p className="font-medium text-3xl">0</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
                       (Mantle Sepolia)
@@ -107,7 +105,6 @@ export default function Page() {
                 <tr className="col-span-full h-0.5 w-full"></tr>
                 <tr className="">
                   <td className="flex py-4 gap-3 pl-10">
-                   
                     $MNT (Mantle testnet)
                   </td>
                   <td className="px-5">$0.93</td>
@@ -120,7 +117,6 @@ export default function Page() {
                 </tr>
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
-                    
                     $MNT (Mantle testnet)
                   </td>
                   <td className="px-5">$0.93</td>
@@ -133,7 +129,6 @@ export default function Page() {
                 </tr>
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
-                    
                     $MNT (Mantle testnet)
                   </td>
                   <td className="px-5">$0.93</td>

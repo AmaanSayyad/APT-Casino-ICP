@@ -1,14 +1,73 @@
 "use client";
+import { Actor, HttpAgent, Identity } from "@dfinity/agent";
+import { AuthClient } from "@dfinity/auth-client";
+import { Principal } from "@dfinity/principal";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { canisterId, createActor } from "../declarations/backend";
 import GradientBorderButton from "./GradientBorderButton";
 import LaunchGameButton from "./LaunchGameButton";
 
+const backend = createActor(canisterId);
+
 export default function Navbar() {
+  const [principal, setPrincipal] = useState(undefined);
+  const [needLogin, setNeedLogin] = useState(true);
+
+  const authClientPromise = AuthClient.create();
+
+  const signIn = async () => {
+    const authClient = await authClientPromise;
+
+    const internetIdentityUrl = import.meta.env.PROD
+      ? undefined
+      : `http://${process.env.CANISTER_ID_INTERNET_IDENTITY}.localhost:4943`;
+
+    await new Promise((resolve) => {
+      authClient.login({
+        identityProvider: internetIdentityUrl,
+        onSuccess: () => resolve(undefined),
+      });
+    });
+
+    const identity = authClient.getIdentity();
+    updateIdentity(identity);
+    setNeedLogin(false);
+  };
+
+  const signOut = async () => {
+    const authClient = await authClientPromise;
+    await authClient.logout();
+    const identity = authClient.getIdentity();
+    updateIdentity(identity);
+    setNeedLogin(true);
+  };
+
+  const updateIdentity = (identity) => {
+    setPrincipal(identity.getPrincipal());
+    Actor.agentOf(backend).replaceIdentity(identity);
+  };
+
+  const setInitialIdentity = async () => {
+    try {
+      const authClient = await AuthClient.create();
+      const identity = authClient.getIdentity();
+      updateIdentity(identity);
+      setNeedLogin(!(await authClient.isAuthenticated()));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    setInitialIdentity();
+  }, []);
+
   const pathname = usePathname();
 
   const router = useRouter();
@@ -80,10 +139,24 @@ export default function Navbar() {
                   <span>Games</span>
                 </span>
                 <span className="flex p-2 items-center gap-3 hover:bg-dark-kiss ">
-                  <LogoutIcon />
-                  <span>Disconnect Wallet</span>
+                  {needLogin ? (
+                    <div className="menu-item-button" onClick={signIn}>
+                      Sign in
+                    </div>
+                  ) : (
+                    <div className="menu-item-button" onClick={signOut}>
+                      Sign Out
+                    </div>
+                  )}
+                  {/* <LogoutIcon />
+                  <span>Disconnect Wallet</span> */}
                 </span>
               </div>
+              {!needLogin && (
+                <div className="principal">
+                  Logged in as: {principal?.toString()}
+                </div>
+              )}
             </div>
           ) : (
             <LaunchGameButton />
