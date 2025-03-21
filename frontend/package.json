@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup": "npm ci && dfx canister create backend && dfx generate backend && dfx deploy"
   },
   "dependencies": {
+    "@dfinity/agent": "^2.3.0",
+    "@dfinity/candid": "^2.3.0",
+    "@dfinity/principal": "^2.3.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.18",
@@ -29,6 +33,7 @@
     "next": "14.2.3",
     "pino-pretty": "^11.1.0",
     "postcss": "8.4.38",
+    "prettier-plugin-motoko": "^0.11.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-hot-toast": "^2.5.2",
@@ -41,6 +46,7 @@
   },
   "devDependencies": {
     "@dfinity/auth-client": "^2.3.0",
-    "@dfinity/identity": "^2.3.0"
+    "@dfinity/identity": "^2.3.0",
+    "@dfinity/internet-identity-playwright": "^0.0.4"
   }
 }

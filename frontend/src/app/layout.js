@@ -1,4 +1,3 @@
-import "../styles/globals.css";
 import AiModal from "../components/AiModal";
 import toast, { Toaster } from 'react-hot-toast';
 export const metadata = {
