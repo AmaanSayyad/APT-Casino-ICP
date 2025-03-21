@@ -1,0 +1,31 @@
+type Roulette = 
+ service {
+   deposit: () -> ();
+   getBalance: () -> (nat) query;
+   placeBet: (vec Bet) -> (Result);
+   withdraw: (nat) -> (Result);
+ };
+type Result = 
+ variant {
+   err: text;
+   ok;
+ };
+type BetType = 
+ variant {
+   column: nat8;
+   corner: nat8;
+   dozen: nat8;
+   evenOdd: bool;
+   line: nat8;
+   lowHigh: bool;
+   redBlack: bool;
+   split: nat8;
+   straight: nat8;
+   street: nat8;
+ };
+type Bet = 
+ record {
+   amount: nat;
+   betType: BetType;
+ };
+service : () -> Roulette

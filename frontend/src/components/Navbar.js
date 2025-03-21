@@ -1,18 +1,15 @@
 "use client";
-import Image from "next/image";
-import LaunchGameButton from "./LaunchGameButton";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import GradientBorderButton from "./GradientBorderButton";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
-import { useRouter } from "next/navigation";
-
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import GradientBorderButton from "./GradientBorderButton";
+import LaunchGameButton from "./LaunchGameButton";
 
 export default function Navbar() {
   const pathname = usePathname();
-
 
   const router = useRouter();
   const navLinks = [
@@ -82,10 +79,7 @@ export default function Navbar() {
                   <SportsEsportsIcon />
                   <span>Games</span>
                 </span>
-                <span
-                
-                  className="flex p-2 items-center gap-3 hover:bg-dark-kiss "
-                >
+                <span className="flex p-2 items-center gap-3 hover:bg-dark-kiss ">
                   <LogoutIcon />
                   <span>Disconnect Wallet</span>
                 </span>
