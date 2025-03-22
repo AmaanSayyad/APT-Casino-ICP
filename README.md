@@ -85,39 +85,11 @@ The global online gambling market is projected to reach **$150 billion by 2030**
 
 Follow these steps to clone, set up, and run the APT-Casino application locally.
 
-## 1. Clone the Repository
+## Canister Links
 
-```bash
-git clone 
-```
+1. **Frontend:** https://zuek5-4yaaa-aaaan-qzyfa-cai.icp0.io/
 
-## 2. Navigate to the Project Directory
-
-```bash
-cd legendary-invention
-```
-
-## 3. Install Dependencies
-
-Open your terminal and run the following command to install all required dependencies:
-```bash
-npm install --f
-```
-
-## 4. Start the Development Server
-
-To start the application in development mode, run:
-```bash
-npm run dev
-```
-
-## 5. Access the Application
-
-Once the server starts, open your browser and go to:
-http://localhost:3000
-You're all set to explore APT-Casino! 🎲🎮
-
-Note: Ensure you have Node.js and npm installed on your system.
+2. ⁠**Backend:** https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=drnas-kiaaa-aaaag-at7fq-cai
 
 ## 📈 Progress
 
