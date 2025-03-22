@@ -17,11 +17,11 @@ export default function Page() {
         />
         <div className="w-full justify-end font-display flex py-5">
           <div className="flex items-center px-3 flex-col border-r">
-            <h5 className="text-sm">TOTAL APTC POOL</h5>
+            <h5 className="text-sm">TOTAL ICPC POOL</h5>
             <span className="text-xl text-sharp-purple">203,746</span>
           </div>
           <div className="flex items-center px-3 flex-col">
-            <h5 className="text-sm">APTC</h5>
+            <h5 className="text-sm">ICPC</h5>
             <span className="text-xl text-sharp-purple">APY 6.03%</span>
           </div>
           <div className=" w-1/12 flex items-end justify-center">
@@ -68,7 +68,7 @@ export default function Page() {
                   <span className="flex items-center mb-5 gap-1">
                     <p className="font-medium text-3xl">0</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
-                      (Mantle Sepolia)
+                      (ICP Chain)
                     </p>
                   </span>
                   <div>
@@ -105,7 +105,7 @@ export default function Page() {
                 <tr className="col-span-full h-0.5 w-full"></tr>
                 <tr className="">
                   <td className="flex py-4 gap-3 pl-10">
-                    $MNT (Mantle testnet)
+                    $ICP (ICP Motoko)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>
@@ -117,7 +117,7 @@ export default function Page() {
                 </tr>
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
-                    $MNT (Mantle testnet)
+                  $ICP (ICP Motoko)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>
@@ -129,7 +129,7 @@ export default function Page() {
                 </tr>
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
-                    $MNT (Mantle testnet)
+                  $ICP (ICP Motoko)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>

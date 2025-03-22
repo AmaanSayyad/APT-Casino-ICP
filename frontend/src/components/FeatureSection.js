@@ -45,7 +45,7 @@ export default function FeatureSection() {
 
       {/* Section Header */}
       <h1 className="font-display text-[32px] leading-[40px] text-center text-white">
-        Key Features of APT-Casino
+        Key Features of ICP-Casino
       </h1>
 
       {/* Features Grid */}
@@ -54,13 +54,13 @@ export default function FeatureSection() {
         <div id="first-col">
           <h2 className="text-dark-kiss text-sm font-semibold">Overview</h2>
           <h1 className="text-white my-5 text-[32px] leading-[40px] font-bold">
-            Traditional Casinos vs APT-Casino
+            Traditional Casinos vs ICP-Casino
           </h1>
           <p className="text-white/[0.6] font-medium leading-relaxed">
             Traditional online casinos often lack transparency, leaving players
             to trust platforms without proof of fairness. Common issues include
-            rigged games, hidden terms, and restrictive policies. APT-Casino
-            leverages Mantle Blockchain to provide a transparent, provably fair
+            rigged games, hidden terms, and restrictive policies. ICP-Casino
+            leverages ICP Blockchain to provide a transparent, provably fair
             gaming experience. Key features include:
           </p>
           <ul className="list-disc pl-6 text-white/[0.6] mt-4 font-medium">
@@ -77,8 +77,8 @@ export default function FeatureSection() {
               Transparent and Fully On-Chain GambleFi
             </h2>
             <p className="text-white">
-            APT-Casino ensures transparency with fully on-chain randomness
-              using our VRF module, guaranteeing verifiably fair outcomes for
+            ICP-Casino ensures transparency with fully on-chain randomness
+              using our ICP Onchain Randomness module, guaranteeing verifiably fair outcomes for
               every game.
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function FeatureSection() {
           <div className="border border-[#E504983D] p-5 flex flex-col gap-3 inner-purple-shadow rounded-xl">
             <h2 className="text-dark-kiss text-sm font-semibold">Cross-Chain Liquidity:</h2>
             <p className="text-white">
-            Users can stake Mantle tokens in liquidity pools to earn APTC tokens, which are used for betting, gaming, and rewards. (Mantle Tokens are equivalent to in-game currency token APTC)
+            Users can stake Mantle tokens in liquidity pools to earn ICPC tokens, which are used for betting, gaming, and rewards. (Mantle Tokens are equivalent to in-game currency token ICPC)
 
             </p>
             <ul className="list-disc pl-6 text-white mt-2">

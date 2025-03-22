@@ -11,11 +11,11 @@ export default function HeroSection() {
     <h1 className="text-6xl font-extrabold leading-tight">
       Enter the Web3 Gaming <br /> Arena:{" "}
       <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-magic to-blue-magic">
-      APT-Casino
+      ICP-Casino
       </span>
     </h1>
     <h2 className="text-[#B3B3B3] mt-4 text-xl leading-relaxed max-w-2xl">
-      Dive into the next generation of gaming with APT-Casino – where every move is powered by <span className="text-white font-semibold">Mantle Blockchain</span>. Discover new games, connect
+      Dive into the next generation of gaming with ICP-Casino – where every move is powered by <span className="text-white font-semibold">ICP Chain</span>. Discover new games, connect
       with friends, and unlock endless possibilities.
     </h2>
     <div className="flex gap-6 mt-8">

@@ -1,4 +1,4 @@
-# APT-Casino 🎲🎰
+# ICP-Casino 🎲🎰
 
 Amaan Sayyad the founder of APT-Casino was on etherscan exploring some transactions and saw an advertisement of https://stake.com/ which was giving a 200% bonus on the first deposit somehow he got attracted to it and deposited 120 USDT into Stake platform, Stake gave him 360 USDT as the total balance and when he started playing game he was shocked to see that he was only able to place bet of default $1 per game of Plinko Casino Game on Stake.com and was unable to increase the betting amount beyond $1 because he was using the bonus scheme of 200% and when he tried to explore and play other games on the platform he got to know that this platform has cheated him under the name of wager limits.
 
@@ -18,7 +18,7 @@ The traditional online gambling industry faces numerous challenges:
 
 ## ✅ Solution
 
-APT-Casino addresses these problems with a fair, transparent, and decentralized ecosystem:
+ICP-Casino addresses these problems with a fair, transparent, and decentralized ecosystem:
 
 - **Provably Fair Gaming**: Leveraging ICP motoko random module, raw_rand calls random tape pseudorandom number generator (PRNG) to ensure transparency and fairness in all games.
 - **Low Fees**: Built on ICP Blockchain, minimizing transaction costs.

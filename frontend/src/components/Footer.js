@@ -15,7 +15,7 @@ export default function Footer() {
             <Image src="/PowerPlay.png" alt="PowerPlay logo" width={172} height={15} />
           </a>
           <p className="mt-9 text-m text-ultra-white/70">
-          APT-Casino is your ultimate destination for Web3 gaming. Experience transparency, fairness,
+          ICPC-Casino is your ultimate destination for Web3 gaming. Experience transparency, fairness,
             and excitement powered by blockchain technology.
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function Footer() {
       {/* Bottom Divider and Legal */}
       <div className="mt-10 w-full h-0.5 magic-gradient"></div>
       <div className="mt-6 text-sm text-center text-white/60">
-        © {new Date().getFullYear()} APT-Casino. All rights reserved. APT-Casino is committed to providing
+        © {new Date().getFullYear()} ICPC-Casino. All rights reserved. ICPC-Casino is committed to providing
         a fair and responsible gaming environment.
       </div>
     </footer>

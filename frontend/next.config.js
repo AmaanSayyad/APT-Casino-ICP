@@ -5,10 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  env: {
-    CANISTER_ID_BACKEND: process.env.CANISTER_ID_BACKEND,
-    CANISTER_ID_INTERNET_IDENTITY: process.env.CANISTER_ID_INTERNET_IDENTITY,
-  },
 };
 
 module.exports = nextConfig;

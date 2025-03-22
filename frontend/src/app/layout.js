@@ -1,7 +1,8 @@
 import AiModal from "../components/AiModal";
+import "../styles/globals.css";
 import toast, { Toaster } from 'react-hot-toast';
 export const metadata = {
-  title: "APT-Casino",
+  title: "ICP-Casino",
   description: "Web3 gaming arena",
 };
 export default function RootLayout({ children }) {
